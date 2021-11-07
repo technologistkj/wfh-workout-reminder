@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FIT@WFH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg" href="img/cm.svg" />
+    <link rel="stylesheet" type="text/css" href="css/jssocials.css" />
+    <link rel="stylesheet" type="text/css" href="css/jssocials-theme-flat.css" />
+</head>
+
+<body>
+    <header role="banner">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">[ FIT@WFH ]</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                    aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample05">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item cta-btn">
+                            <button class="nav-link" id="quitButton">EXIT</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3" style="margin-top: 4vh; padding-top: 40vh;">
+
+            </div>
+            <div class="col-sm-6">
+                <section class="ftco-section" id="initiation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center" id="userNameDiv">
+                                <h2 class="heading-section mb-5 pb-md-4">
+                                    <input type="text" id="userNameInput"
+                                        style="padding-left: 5px; margin-left: 5px; width: 99%;"
+                                        placeholder="What is your first name ?" />
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2 class="heading-section mb-5 pb-md-4">Which exercises can you do today ?</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-4" id="exercisesDiv">
+                                <label class="checkbox-wrap checkbox-primary"><span class="exType"
+                                        id="burpees">Burpees</span>
+                                    <input type="checkbox" checked value="burpees">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-wrap checkbox-success"><span class="exType"
+                                        id="lunges">Lunges</span>
+                                    <input type="checkbox" checked value="lunges">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-wrap checkbox-danger"><span class="exType"
+                                        id="pushups">PushUps</span>
+                                    <input type="checkbox" checked value="pushups">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-wrap checkbox-warning"><span class="exType"
+                                        id="squats">Squats</span>
+                                    <input type="checkbox" checked value="squats">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-wrap checkbox-info"><span class="exType" id="plank">Plank</span>
+                                    <input type="checkbox" checked value="plank">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button id="startDayButton">START MY FIT WFH DAY!</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="ftco-section" id="workoutSchedule">
+                    <div class="container" id="shallRemind">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2 class="heading-section mb-5 pb-md-4"></h2>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <h2 class="heading-section mb-5 pb-md-4 append"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" id="startReminder">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2 class="heading-section mb-5 pb-md-4"></h2>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button id="userIsPresentButton">Yes, I'm Here</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" id="checkIfFree">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2 class="heading-section mb-5 pb-md-4"></h2>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button id="exerciseStartedButton">Yes, Here I go!</button>
+                                <button id="userNotFreeButton">No, Not now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" id="startExerciseResponse">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2 class="heading-section mb-5 pb-md-4"></h2>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button id="exerciseFinishedButton">I'm Done</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" id="noExerciseResponse">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2 class="heading-section mb-5 pb-md-4"></h2>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button id="waitForNextTurnButton">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" id="congratulateCompletion">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2 class="heading-section mb-5 pb-md-4"></h2>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button id="returnAfterExerciseButton">OK, Thanks!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" id="focusOnWork">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2 class="heading-section mb-5 pb-md-4"></h2>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <div class="mb-5 pb-md-4">P.S. Keep yourself hydrated. [H<sub>2</sub>O++]</div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <div class="mb-5 pb-md-4 append"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container" id="byeBye">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2 class="heading-section mb-5 pb-md-4">Thank you. See you tomorrow!</h2>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <div class="mb-5 pb-md-4">You may now close this window.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-sm-3" style="margin-top: 4vh;">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6357736944364952"
+                    crossorigin="anonymous"></script>
+                <!-- WFH-FITNESS-AD -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6357736944364952"
+                    data-ad-slot="8494346429" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center" style="margin-top: -4em;">
+        <h3>Liking it ? Share with friends!</h3>
+        <div id="share" style="text-align: center; align-content: center;"></div>
+    </div>
+    
+    <div id="demoDivs" style="visibility: visible;">
+        <div id="burpeesDemo" class="tenor-gif-embed" data-postid="10862744" data-share-method="host"
+            data-aspect-ratio="1.50943" data-width="100%"><a
+                href="https://tenor.com/view/exercise-jump-gif-10862744">Exercise Jump GIF</a>from <a
+                href="https://tenor.com/search/exercise-gifs">Exercise GIFs</a></div>
+        <div id="lungesDemo" class="tenor-gif-embed" data-postid="18573733" data-share-method="host"
+            data-aspect-ratio="0.85" data-width="100%"><a href="https://tenor.com/view/lunges-gif-18573733">Lunges
+                GIF</a>from <a href="https://tenor.com/search/lunges-gifs">Lunges GIFs</a></div>
+        <div id="pushupsDemo" class="tenor-gif-embed" data-postid="17687436" data-share-method="host"
+            data-aspect-ratio="1" data-width="100%"><a
+                href="https://tenor.com/view/push-up-exercise-fitness-goals-fitness-muscle-gif-17687436">Push Up
+                Exercise Sticker</a>from <a href="https://tenor.com/search/push+up-stickers">Push Up Stickers</a></div>
+        <div id="squatsDemo" class="tenor-gif-embed" data-postid="19063423" data-share-method="host"
+            data-aspect-ratio="0.88125" data-width="100%"><a
+                href="https://tenor.com/view/anchie-anchie_fit-squats-kniebeugen-sport-gif-19063423">Anchie Anchie_fit
+                Sticker</a>from <a href="https://tenor.com/search/anchie-stickers">Anchie Stickers</a></div>
+        <div id="plankDemo" class="tenor-gif-embed" data-postid="17051416" data-share-method="host"
+            data-aspect-ratio="1" data-width="100%"><a
+                href="https://tenor.com/view/planking-the-pet-collective-interrupting-bothering-distracting-gif-17051416">Planking
+                The Pet Collective Sticker</a>from <a href="https://tenor.com/search/planking-stickers">Planking
+                Stickers</a></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+        integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <script src="js/jssocials.min.js"></script>
+
+</body>
+
+</html>
