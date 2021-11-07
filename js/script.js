@@ -42,6 +42,29 @@ window.addEventListener("load", function () {
         console.log("voices : " + voices);
     }
 
+    var exercisesStored = localStorage.getItem("exercisesStored");
+    if (exercisesStored) {
+        var prevExercises = JSON.parse(exercisesStored);
+        $("input[type='checkbox']").each(function () {
+            var wasSelected = false;
+            for (ex in prevExercises) {
+                if (prevExercises[ex] == this.value) {
+                    wasSelected = true;
+                    break;
+                }
+            }
+            if (!wasSelected) {
+                this.checked = false;
+            }
+        });
+    }
+
+    var prevName = localStorage.getItem("firstName");
+    if (prevName) {
+        $("#userNameInput").val(prevName);
+    }
+    
+
     Notification.requestPermission().then(function (permission) {
         console.log(permission);
     });
@@ -71,6 +94,9 @@ var FitnessApp = {
             self.selectedExercises.push(this.value);
         });
 
+        
+        
+
         self.exercisesDescription = "";
         if (self.selectedExercises.length > 0) {
             for (ex in self.selectedExercises) {
@@ -85,6 +111,7 @@ var FitnessApp = {
                 self.exercisesDescription += self.selectedExercises[ex];
             }    
         }
+
 
         if (self.selectedExercises.length == 0) {
             $("#exercisesDiv").effect("shake");
@@ -110,6 +137,9 @@ var FitnessApp = {
         $("#returnAfterExerciseButton").click(function () {
             self.showState("focusOnWork", true);
         });
+
+        localStorage.setItem("firstName", userName);
+        localStorage.setItem("exercisesStored", JSON.stringify(self.selectedExercises));
 
         $("#initiation").hide();
         $("#workoutSchedule").show();
